@@ -23,6 +23,7 @@ class PrimesNumberViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Calculate", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
+        button.setTitleColor(.systemRed, for: .highlighted)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -53,6 +54,17 @@ class PrimesNumberViewController: UIViewController {
         startButton.addTarget(self, action: #selector(startButtonPressed), for: .touchUpInside)
     }
     
+    private func findPrimesNumber(upTo max: Int) -> [Int] {
+        var testValue = 2
+        var numbers = (2...max).map { $0 }
+        
+        while (testValue * testValue <= max) {
+            numbers.removeAll(where: { $0 >= testValue * testValue && $0.isMultiple(of: testValue)})
+            testValue = numbers.first(where: { $0 > testValue}) ?? 0
+        }
+        return numbers
+    }
+    
     @objc private func startButtonPressed() {
         if let text = numberTF.text {
             view.endEditing(true)
@@ -70,16 +82,5 @@ class PrimesNumberViewController: UIViewController {
                 print("Max value must be greater 1")
             }
         }
-    }
-    
-    private func findPrimesNumber(upTo max: Int) -> [Int] {
-        var testValue = 2
-        var numbers = (2...max).map { $0 }
-        
-        while (testValue * testValue <= max) {
-            numbers.removeAll(where: { $0 >= testValue * testValue && $0.isMultiple(of: testValue)})
-            testValue = numbers.first(where: { $0 > testValue}) ?? 0
-        }
-        return numbers
     }
 }

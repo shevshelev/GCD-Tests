@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B815329228167245002C0611 /* NewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815329128167245002C0611 /* NewClass.swift */; };
 		B8F05EA22814380D00C64720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05EA12814380D00C64720 /* AppDelegate.swift */; };
 		B8F05EA42814380D00C64720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05EA32814380D00C64720 /* SceneDelegate.swift */; };
 		B8F05EA62814380D00C64720 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F05EA52814380D00C64720 /* ImageViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B815329128167245002C0611 /* NewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClass.swift; sourceTree = "<group>"; };
 		B8F05E9E2814380D00C64720 /* GCD Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F05EA12814380D00C64720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8F05EA32814380D00C64720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				B8F05EB8281439EF00C64720 /* ViewControllers */,
 				B8F05EB6281439A500C64720 /* Resources */,
 				B8F05EB52814399200C64720 /* Storyboards */,
+				B815329128167245002C0611 /* NewClass.swift */,
 			);
 			path = "GCD Tests";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				B8F05EA62814380D00C64720 /* ImageViewController.swift in Sources */,
 				B8F05EBA28143A3500C64720 /* TabBarController.swift in Sources */,
+				B815329228167245002C0611 /* NewClass.swift in Sources */,
 				B8F05EBD28144BAD00C64720 /* NetworkManager.swift in Sources */,
 				B8F05EA22814380D00C64720 /* AppDelegate.swift in Sources */,
 				B8F05EBF28145EB100C64720 /* PrimesNumberViewController.swift in Sources */,
